@@ -1,101 +1,78 @@
-import Image from "next/image";
+
+
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div className="flex flex-col items-center px-4 sm:px-8 lg:px-16 bg-[#252B42] overflow-hidden">
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    
+      <nav className="p-4 w-full">
+        <div className="container mx-auto flex justify-between items-center">
+          
+          <div className="text-white text-[24px] font-bold mt-2">
+            <span>BrandName</span>
+          </div>
+
+          
+          <div className="hidden md:flex space-x-8 text-white text-[14px] leading-[24px]">
+            <span>Home</span>
+            <span>Product</span>
+            <span>Pricing</span>
+            <span>Contact</span>
+          </div>
+
+        
+          <div className="flex space-x-4">
+            <span className="text-[#ffffff] text-[14px] hover:text-[#cccccc]">Login</span>
+            <button className="bg-[#23A6F0] text-white px-4 py-2 rounded text-[14px]">
+              JOIN US
+            </button>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </nav>
+
+      <div className="flex flex-col items-center gap-10 mt-8 sm:mt-16">
+        <div className="text-center">
+          <div className="text-[#35A6F0] text-[16px] font-bold">Welcome</div>
+          <p className="text-[32px] sm:text-[42px] lg:text-[58px] font-bold text-[#ffffff] leading-[40px] sm:leading-[56px] mt-4">
+            Selling on the <br /> internet like a pro
+          </p>
+          <p className="text-[#ffffff] mt-4 max-w-[90%] sm:max-w-[542px] mx-auto leading-[30px]">
+            We know how large objects will act, but things on a <br /> small scale just do not act that way.
+          </p>
+          <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 space-x-0 sm:space-x-4 mt-10 justify-center items-center">
+            <button className="bg-[#35A6F0] text-white px-6 py-2 rounded">Get Quote Now</button>
+            <button className="border border-[#35A6F0] text-[#35A6F0] px-6 py-2 rounded">Learn More</button>
+          </div>
+        </div>
+
+  
+        <div className="flex flex-wrap justify-center mt-10 gap-6 mb-20">
+          
+          <div className="bg-white text-black p-6 rounded-lg shadow-md w-full sm:w-[328px]">
+            <div className="w-20 h-20 rounded-xl bg-[#FCEBEB] mx-auto mb-4"></div>
+            <h2 className="font-bold mt-4">Training Courses</h2>
+            <div className="h-[2px] bg-[#FFDCD1] w-[50px] my-2"></div>
+            <p>The gradual accumulation of information about atomic and small-scale behaviour...</p>
+          </div>
+
+          
+          <div className="bg-white text-black p-6 rounded-lg shadow-md w-full sm:w-[328px]">
+            <div className="w-20 h-20 rounded-xl bg-[#B9EAA8] mx-auto mb-4"></div>
+            <h2 className="font-bold mt-4">2,769 Online Courses</h2>
+            <div className="h-[2px] bg-[#E74040] w-[50px] my-2"></div>
+            <p>The gradual accumulation of information about atomic and small-scale behaviour...</p>
+          </div>
+
+          
+          <div className="bg-[#35A6F0] text-white p-6 rounded-lg shadow-md w-full sm:w-[328px]">
+            <div className="w-20 h-20 rounded-xl bg-white mx-auto mb-4"></div>
+            <h2 className="font-bold mt-4">Special Feature</h2>
+            <div className="h-[2px] bg-white w-[50px] my-2"></div>
+            <p>The gradual accumulation of information about atomic and small-scale behaviour...</p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
